@@ -3,9 +3,9 @@ import numpy
 
 field = {
     "choices":numpy.matrix("0 0 0; 0 0 0; 0 0 0"), 
-    "active":numpy.matrix("1 1 1; 1 1 1; 1 1 1")
+    "active":numpy.matrix("1 1 1; 1 2 1; 1 1 1")
          }
-print(field["choices"])
+
 turns = {
     1:"cross",
     2:"circle"
@@ -18,6 +18,9 @@ turns = {
 main = Tk()
 main.title("Tic-Tac-Toe")
 main.minsize(300,300)
+
+title = Label(text="Крестики нолики")
+title.grid(row=1, column=1)
 
 
 # main.mainloop()
